@@ -8,7 +8,7 @@ import baseUrl from '../Urls';
 
 const Login = () => {
   let navigate = useNavigate();
-  const url =  `${baseUrl}/api/user/login-user`;
+  const url =  `${baseUrl}api/user/login-user`;
 
   const [details, setDetails] = useState({ email: "", password: "" });
 

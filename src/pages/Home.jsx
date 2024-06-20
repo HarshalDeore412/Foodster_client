@@ -8,7 +8,7 @@ import category from "../assects/data/foodCategory.json";
 import baseUrl from '../Urls';
 
 const Home = () => {
-  const url =  `${baseUrl}/api/data/get-all-data`;
+  const url =  `${baseUrl}api/data/get-all-data`;
   const [foodData, setFoodData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
