@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import UploadFood from "../components/UploadFood"
 const AdminPanel = () => {
-  const url = "http://localhost:4000/api/data/get-all-data";
+  const url = `${baseUrl}api/data/get-all-data`;
   const [foodItems, setFoodItems] = useState([]);
   const [newFoodItem, setNewFoodItem] = useState("");
 
@@ -30,7 +30,7 @@ const AdminPanel = () => {
   };
 
   const deleteFoodItem = (index) => {
-    url = "http://localhost:4000/api/data/delet-product:par"
+    url =  `${baseUrl}/api/data/delet-product:par`
 
     fetch()
 

@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 
 const UploadFood = () => {
-  const url = "http://localhost:4000/api/data/food-upload";
+  const url = `${baseUrl}api/data/food-upload`;
   const [details, setDetails] = useState({
     name: "",
     category: "",

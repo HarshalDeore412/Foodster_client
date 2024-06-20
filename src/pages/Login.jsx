@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 const Login = () => {
   let navigate = useNavigate();
-  const url = "http://localhost:4000/api/user/login-user";
+  const url =  `${baseUrl}/api/user/login-user`;
 
   const [details, setDetails] = useState({ email: "", password: "" });
 

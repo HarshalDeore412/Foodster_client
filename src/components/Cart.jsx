@@ -4,8 +4,10 @@ import toast from "react-hot-toast";
 import { TiDeleteOutline } from "react-icons/ti";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import baseUrl from "../Urls"
 
 const Cart = ({setCartView}) => {
+
   
   const navigate = useNavigate();
   let data = useCart();
@@ -19,8 +21,9 @@ const Cart = ({setCartView}) => {
     );
   }
 
+  
   const handleCheckOut = async () => {
-    const url = "http://localhost:4000/api/order/order-data";
+    const url = `${baseUrl}api/order/order-data`;
     const userEmail = localStorage.getItem("userEmail");
     console.log(userEmail);
     let response = await fetch(url, {

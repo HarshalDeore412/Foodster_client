@@ -5,9 +5,10 @@ import Loader from "../components/Loader";
 import Card from "../components/Card";
 import Carousel from "../components/Carousel";
 import category from "../assects/data/foodCategory.json";
+import { baseUrl } from "../Urls";
 
 const Home = () => {
-  const url = "http://localhost:4000/api/data/get-all-data";
+  const url =  `${baseUrl}/api/data/get-all-data`;
   const [foodData, setFoodData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");

@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const MyOrders = () => {
-  const url = "http://localhost:4000/api/order/my-orders";
+  const url = `${baseUrl}api/order/my-orders`
 
   const [orderData, setOrderData] = useState("");
 

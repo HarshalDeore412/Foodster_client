@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const Signup = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:4000/api/user";
+  const url =  `${baseUrl}api/user`;
   const [otpRecived, setOtpRecived] = useState(true);
   const [OTP, setOTP] = useState("");
   const [userLocation, setUserLocation] = useState(null);
