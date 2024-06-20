@@ -1,1 +1,3 @@
-export const baseUrl = "https://foodster-server.onrender.com/"
+const baseUrl = "https://foodster-server.onrender.com/"
+
+export default baseUrl;
