@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { TiDeleteOutline } from "react-icons/ti";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
-import baseUrl from "../Urls"
+import baseUrl from '../Urls';
 
 const Cart = ({setCartView}) => {
 

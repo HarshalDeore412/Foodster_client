@@ -3,7 +3,7 @@ import Button from "./Button";
 import convertToBase64 from "../services/convertToBase64";
 import category from "../assects/data/foodCategory.json";
 import toast from "react-hot-toast";
-
+import baseUrl from '../Urls';
 
 const UploadFood = () => {
   const url = `${baseUrl}api/data/food-upload`;

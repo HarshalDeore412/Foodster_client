@@ -3,17 +3,6 @@ import { Link } from "react-router-dom";
 import Logo from "../assects/Images/LOGO.jpg"
 
 
-
-
-
-
-
-
-
-
-
-
-
 const Footer = () => {
   return (
     <div>

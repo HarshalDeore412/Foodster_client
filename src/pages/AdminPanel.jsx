@@ -4,6 +4,8 @@ import data from "../assects/data/foodCategory.json";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import UploadFood from "../components/UploadFood"
+import baseUrl from '../Urls';
+
 const AdminPanel = () => {
   const url = `${baseUrl}api/data/get-all-data`;
   const [foodItems, setFoodItems] = useState([]);

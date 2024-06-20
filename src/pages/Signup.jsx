@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { redirect, useNavigate } from "react-router-dom";
 import VerifyOtp from "../components/VerifyOtp";
 import { useEffect } from "react";
+import baseUrl from '../Urls';
 
 const Signup = () => {
   const navigate = useNavigate();
