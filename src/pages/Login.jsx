@@ -51,7 +51,7 @@ const Login = () => {
         <Navbar />
       </div>
 
-      <div className="h-screen w-full ">
+      <div className="h-screen  w-full max-w-screen-xl mx-auto  ">
         <div className="h-full  flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
           <div className="relative">
             <div className="absolute -top-2 -left-2 -right-2 -bottom-2 rounded-lg bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow-lg animate-pulse"></div>
