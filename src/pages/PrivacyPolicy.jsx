@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     <div>
         <Navbar />
     </div>
-    <div className="bg-pink-100 h-screen text-gray-800 p-8">
+    <div className="bg-pink-100  w-full max-w-screen-xl mx-auto h-screen text-gray-800 p-8">
       <div className="container mx-auto">
         <div className="bg-white rounded shadow p-6 m-4">
           <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
