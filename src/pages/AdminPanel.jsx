@@ -51,7 +51,7 @@ const AdminPanel = () => {
   }, []);
 
   return (
-    <div className=" w-screen">
+    <div className="  w-full max-w-screen-xl mx-auto w-screen">
       <div className="w-full" >
         <Navbar />
       </div>
