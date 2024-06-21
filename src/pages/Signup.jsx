@@ -96,7 +96,7 @@ const Signup = () => {
       </div>
 
       <div>
-        <div className=" text-white flex justify-center items-center bg-gradient-to-r from-red-500 to-green-300  h-screen w-full ">
+        <div className="  max-w-screen-xl mx-auto text-white flex justify-center items-center bg-gradient-to-r from-red-500 to-green-300  h-screen w-full ">
           <div className="w-[400px] rounded-2xl bg-slate-900 my-auto">
             <form action="" onSubmit={handleSubmit}>
               <div className="flex flex-col gap-2 p-8">
