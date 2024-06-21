@@ -41,14 +41,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="w-full max-w-screen-xl mx-auto" >
       <div>
         <Navbar props={{ search, setSearch }} />
       </div>
       <div>
         <Carousel />
       </div>
-      <div className="h-fit">
+      <div className="h-fit w-full max-w-screen-xl mx-auto ">
         {loading ? (
           <Loader />
         ) : (
