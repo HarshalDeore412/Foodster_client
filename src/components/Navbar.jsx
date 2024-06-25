@@ -23,7 +23,7 @@ const Navbar = ({ props }) => {
   const userName = localStorage.getItem("userName");
 
   return (
-    <div className="w-full max-w-screen-xl mx-auto text-gray-950 carousel dark:bg-gray-900 flex flex-row justify-between p-1 ">
+    <div className="w-full max-w-screen-xl mx-auto text-gray-950 dark:text-white carousel dark:bg-gray-900 flex flex-row justify-between p-1 ">
       <div className="justify-start">
         <div className="flex gap-4 flex-row items-center ">
           <div className=" ">
