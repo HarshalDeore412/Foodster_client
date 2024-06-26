@@ -25,13 +25,7 @@ const UploadFood = () => {
     price: details.price,
     image: details.image,
   }),
-}).then(console.log("good to go ...."))
-  .catch((err) => console.log("error : ", err));
-
-if (!response.ok) {
-  throw new Error(`Fetch failed with status ${response.status}`);
-}
-
+}).then(console.log("good to go ....").catch((err) => console.log("error : ", err));
     
     console.log(response);
     const json = await response.json();
