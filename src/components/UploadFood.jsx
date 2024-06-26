@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import convertToBase64 from "../services/convertToBase64";
-import category from "../assects/data/foodCategory.json";
 import toast from "react-hot-toast";
 import baseUrl from '../Urls';
 
 const UploadFood = () => {
   const url = `${baseUrl}api/data/food-upload`;
-  
+
   const [details, setDetails] = useState({
     name: "",
     category: "",
@@ -18,43 +17,41 @@ const UploadFood = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: details.name,
-        description: details.description,
-        category: details.category,
-        price: details.price,
-        image: details.image,
-      }),
-    }).then(console.log("good to go ...."))
-      .catch((err) => console.log("error : ", err));
-    
-    console.log(response);
-    const json = await response.json();
-    console.log(json);
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(details),
+      });
 
-    if (json.success) {
-      toast.success("data uploaded successfull");
-    } else {
-      toast.error("error while uploading the data");
+      if (response.ok) {
+        const json = await response.json();
+        if (json.success) {
+          toast.success("Data uploaded successfully");
+        } else {
+          toast.error("Error while uploading data");
+        }
+      } else {
+        toast.error("Network error. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error during data upload:", error);
+      toast.error("An unexpected error occurred. Please try again.");
     }
   };
 
-  const onchange = (event) => {
+  const handleChange = (event) => {
     setDetails({ ...details, [event.target.name]: event.target.value });
   };
 
-  const onFileChange = async (event) => {
+  const handleFileChange = async (event) => {
     const file = event.target.files[0];
     const base64 = await convertToBase64(file);
-    console.log(base64);
-    details.image = base64;
-    console.log(details);
+    setDetails({ ...details, image: base64 });
   };
 
   return (
+    return (
     <div>
       <div className="flex flex-col items-center justify-center h-screen dark">
         <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
@@ -121,3 +118,4 @@ const UploadFood = () => {
 };
 
 export default UploadFood;
+
