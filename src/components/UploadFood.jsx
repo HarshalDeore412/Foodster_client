@@ -7,6 +7,7 @@ import baseUrl from '../Urls';
 
 const UploadFood = () => {
   const url = `${baseUrl}api/data/food-upload`;
+  
   const [details, setDetails] = useState({
     name: "",
     category: "",
@@ -27,8 +28,7 @@ const UploadFood = () => {
         price: details.price,
         image: details.image,
       }),
-    })
-      .then(console.log("good to go ...."))
+    }).then(console.log("good to go ...."))
       .catch((err) => console.log("error : ", err));
     
     console.log(response);
