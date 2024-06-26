@@ -15,22 +15,24 @@ const UploadFood = () => {
     image: "",
   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: details.name,
-        description: details.description,
-        category: details.category,
-        price: details.price,
-        image: details.image,
-      }),
-    })
-      .then(console.log("good to go ...."))
-      .catch((err) => console.log("error : ", err));
+  const response = await fetch(url, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    name: details.name,
+    description: details.description,
+    category: details.category,
+    price: details.price,
+    image: details.image,
+  }),
+}).then(console.log("good to go ...."))
+  .catch((err) => console.log("error : ", err));
 
+if (!response.ok) {
+  throw new Error(`Fetch failed with status ${response.status}`);
+}
+
+    
     console.log(response);
     const json = await response.json();
     console.log(json);
