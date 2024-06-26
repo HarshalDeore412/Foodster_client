@@ -60,14 +60,14 @@ const UploadFood = () => {
 
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <input
-              onChange={onchange}
+              onChange={handleChange}
               name="name"
               placeholder="name"
               className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
               type="text"
             />
             {/* <input
-              onChange={onchange}
+              onChange={handleChange}
               name="category"
               placeholder="category"
               className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
@@ -76,7 +76,7 @@ const UploadFood = () => {
             
             <select
               className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-              onChange={onchange}
+              onChange={handleChange}
               type="select"
               name="category"
               id="" >
@@ -87,21 +87,21 @@ const UploadFood = () => {
             </select>
             
             <input
-              onChange={onchange}
+              onChange={handleChange}
               name="price"
               placeholder="price"
               className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
               type="text"
             />
             <input
-              onChange={onchange}
+              onChange={handleChange}
               name="description"
               placeholder="description"
               className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
               type="text"
             />
             <input
-              onChange={onchange}
+              onChange={handleChange}
               name="image"
               placeholder="image"
               className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
