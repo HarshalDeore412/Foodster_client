@@ -38,6 +38,7 @@ const MyOrders = () => {
       <div>
         <Navbar />
       </div>
+      <div>
         {orderData ? (
           <div className=" bg-gray-900 text-white ">
             {orderData.order_data.map((data, index) => {
