@@ -48,7 +48,7 @@ const Home = () => {
       <div>
         <Carousel />
       </div>
-      <div className="h-fit w-full max-w-screen-xl mx-auto ">
+      <div className="h-fit w-full mx-auto ">
         {loading ? (
           <Loader />
         ) : (
