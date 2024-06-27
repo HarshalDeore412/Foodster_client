@@ -11,7 +11,7 @@ const Contact = () => {
 </div>
 
 
-      <div className=" w-full mx-auto" >
+      <div className="w-full max-w-screen-xl mx-auto" >
       <div className="flex flex-col items-center justify-center h-screen dark">
         <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-bold text-gray-200 mb-4">Contact Form</h2>
