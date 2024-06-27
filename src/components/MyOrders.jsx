@@ -94,7 +94,7 @@ const MyOrders = () => {
         )}
       </div>
 */}
-
+<div>
   {orderData ? (
   <div className="bg-gray-900 text-white">
     {orderData.order_data.reverse().map((data, index) => {
@@ -133,7 +133,7 @@ const MyOrders = () => {
     </div>
   </div>
 )}
-
+</div>
   
       <div>
         <Footer />
