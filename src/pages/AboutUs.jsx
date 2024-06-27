@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div>
          <Navbar />
       </div>
-      <div className=" w-full mx-auto bg-pink-100 h-screen text-gray-800 p-8">
+      <div className=" w-full max-w-screen-xl mx-auto bg-pink-100 h-screen text-gray-800 p-8">
         <div className="container mx-auto">
           <div className="bg-white rounded shadow p-6 m-4">
             <h1 className="text-2xl font-bold mb-4">About Foodster</h1>
