@@ -41,7 +41,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-screen-xl " >
+    <div className="w-full h-screen max-w-screen-xl " >
       <div>
         <Navbar props={{ search, setSearch }} />
       </div>
